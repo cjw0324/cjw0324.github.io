@@ -4,7 +4,7 @@
   <id>http://localhost:4000/</id>
   <title>Chirpy</title>
   <subtitle>A minimal, responsive and feature-rich Jekyll theme for technical writing.</subtitle>
-  <updated>2024-10-12T02:49:24+09:00</updated>
+  <updated>2024-10-12T03:04:15+09:00</updated>
   <author>
     <name>your_full_name</name>
     <uri>http://localhost:4000/</uri>
@@ -17,6 +17,30 @@
   <icon>/assets/img/favicons/favicon.ico</icon>
   <logo>/assets/img/favicons/favicon-96x96.png</logo>
 
+
+  
+  <entry>
+    <title>Start_blog</title>
+    <link href="http://localhost:4000/posts/start_blog/" rel="alternate" type="text/html" title="Start_blog" />
+    <published>2024-10-12T00:00:00+09:00</published>
+  
+    <updated>2024-10-12T00:00:00+09:00</updated>
+  
+    <id>http://localhost:4000/posts/start_blog/</id>
+    <content src="http://localhost:4000/posts/start_blog/" />
+    <author>
+      <name>your_full_name</name>
+    </author>
+
+  
+    
+  
+
+  <summary>Hello here is Jaewoo’s study blog
+
+hello!</summary>
+
+  </entry>
 
 </feed>
 
