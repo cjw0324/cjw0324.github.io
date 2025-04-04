@@ -78,6 +78,7 @@ function FindME() {
               걸어 <strong>필터링하는</strong> 구조였고, 이는 데이터량이
               많아질수록 <strong>심각한 속도 저하</strong>를 일으켰습니다.
             </p>
+            <br />
             <p>
               이 문제를 해결하기 위해 조건을 쿼리로에 직접 적용하려 했으나, 조합
               가능한 검색 조건이 너무 많아 각각에 대해 쿼리를 작성하기엔
@@ -86,6 +87,7 @@ function FindME() {
               입력에 따라 <strong>필요한 조건</strong>만 쿼리에 적용되도록
               설계함으로써 성능 문제를 효과적으로 해결할 수 있었습니다.
             </p>
+            <br />
             <p>
               이 경험을 통해,{" "}
               <strong>
@@ -96,6 +98,7 @@ function FindME() {
               <strong>효율성과 확장성을 고려한 설계의 필요성</strong>을
               실감했습니다.
             </p>
+            <br />
           </li>
           <li>
             <h3>@Transactional이 적용되지 않는 문제</h3>
@@ -108,6 +111,7 @@ function FindME() {
               이로 인해 <strong>Spring AOP 프록시</strong>가 적용되지 않아
               트랜잭션이 무시되고 있던 상황이었습니다.
             </p>
+            <br />
             <p>
               문제 해결을 위해 트랜잭션이 필요한 로직을 별도의{" "}
               <strong>서비스 클래스로 분리</strong>하고,{" "}
@@ -118,6 +122,7 @@ function FindME() {
               트랜잭션을 안정적으로 적용하기 위한 <strong>설계 습관</strong>도
               갖추게 되었습니다.
             </p>
+            <br />
           </li>
         </ol>
       </div>

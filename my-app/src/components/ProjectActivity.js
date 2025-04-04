@@ -4,7 +4,9 @@ import { Link } from "react-router-dom";
 function ProjectActivity() {
   return (
     <section className="section project-section">
-      <h2 className="section-title">Project & Activity</h2>
+      <h2 className="section-title" style={{ textAlign: "left" }}>
+        Project & Activity
+      </h2>
 
       <div
         className="project-info-message"

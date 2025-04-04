@@ -93,6 +93,7 @@ function CodeBrew() {
               <strong>별도 트랜잭션</strong>으로 처리했기 때문에, 동시 접근 시
               Race Condition이 발생 하였습니다.
             </p>
+            <br />
             <p>
               이 문제를 해결하기 위해{" "}
               <strong>DB 비관적 락, Redis 분산 락</strong>을 구현하고{" "}
@@ -100,6 +101,7 @@ function CodeBrew() {
               <strong>Redis 분산 락 방식이 97TPS</strong>로 가장 안정적이고
               효율적인 처리 속도를 보여 적용하게 되었습니다.
             </p>
+            <br />
           </li>
           <li>
             <h3>외부 결제 API 연동 중 예외 처리 누락</h3>

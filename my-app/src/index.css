@@ -86,3 +86,9 @@ code {
 .contact-section a:hover {
   text-decoration: underline;
 }
+
+body,
+p,
+div {
+  text-align: left;
+}

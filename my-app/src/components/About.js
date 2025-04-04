@@ -3,7 +3,9 @@ import React from "react";
 function About() {
   return (
     <section className="section about-section">
-      <h2 className="section-title">About ME</h2>
+      <h2 className="section-title" style={{ textAlign: "left" }}>
+        About ME
+      </h2>
       <div className="about-content">
         <p>
           안녕하세요, <strong>소통과 협업</strong>을 통한{" "}
