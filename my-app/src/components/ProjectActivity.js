@@ -105,7 +105,7 @@ function ProjectActivity() {
                 Dev Prep : 개발자를 위한 CS 지식 학습 플랫폼
               </Link>
             </h3>
-            <p>Role : Project Manager / Back-End Developer</p>
+            <p>Role : Back-End Developer</p>
           </div>
         </div>
       </div>

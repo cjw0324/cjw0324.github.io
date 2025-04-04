@@ -13,7 +13,7 @@ function Education() {
           </div>
           <div className="content-column">
             <div className="education-item">
-              <h3>단국대학교 SW융합대학 컴퓨터공학과 (공학사 / 심화과정)</h3>
+              <h3>단국대학교 컴퓨터공학과 (공학사 / 심화과정)</h3>
               <div className="grades">
                 <p>총 학점 : 3.74 / 4.5</p>
                 <p>전공 학점 : 3.82 / 4.5</p>
