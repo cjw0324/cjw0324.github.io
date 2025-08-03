@@ -1,7 +1,29 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ImageModal from "../components/common/ImageModal";
 
 function CodeBrew() {
+  const [modalImage, setModalImage] = useState(null);
+
+  const images = [
+    {
+      src: "/images/codebrew/architecture.png",
+      alt: "시스템 아키텍처",
+    },
+    {
+      src: "/images/codebrew/1.png",
+      alt: "메인 페이지",
+    },
+    {
+      src: "/images/codebrew/2.png",
+      alt: "검색 화면",
+    },
+    {
+      src: "/images/codebrew/3.png",
+      alt: "구매 결제",
+    },
+  ];
+
   return (
     <div className="project-page">
       <div className="project-header">
@@ -23,7 +45,7 @@ function CodeBrew() {
 
       <div className="project-description">
         <p>
-          CODE-Brew는 <strong>실시간 주문·결제부터재고 관리</strong>까지
+          CODE-Brew는 <strong>실시간 주문·결제부터 재고 관리</strong>까지
           아우르는 온라인 카페 통합 관리 서비스입니다.
         </p>
       </div>
@@ -93,7 +115,6 @@ function CodeBrew() {
               <strong>별도 트랜잭션</strong>으로 처리했기 때문에, 동시 접근 시
               Race Condition이 발생 하였습니다.
             </p>
-            <br />
             <p>
               이 문제를 해결하기 위해{" "}
               <strong>DB 비관적 락, Redis 분산 락</strong>을 구현하고{" "}
@@ -101,8 +122,8 @@ function CodeBrew() {
               <strong>Redis 분산 락 방식이 97TPS</strong>로 가장 안정적이고
               효율적인 처리 속도를 보여 적용하게 되었습니다.
             </p>
-            <br />
           </li>
+
           <li>
             <h3>외부 결제 API 연동 중 예외 처리 누락</h3>
             <p>
@@ -120,62 +141,23 @@ function CodeBrew() {
       </div>
 
       <div className="project-section">
-        <h2 className="project-section-title">서비스 기획</h2>
+        <h2 className="project-section-title">최종 결과물</h2>
         <div className="project-content-grid">
-          <img
-            src="/images/codebrew/service1.png"
-            alt="서비스 플로우"
-            className="project-image"
-          />
-          <img
-            src="/images/codebrew/service2.png"
-            alt="시스템 IA"
-            className="project-image"
-          />
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img.src}
+              alt={img.alt}
+              className="project-image"
+              style={{ cursor: "pointer" }}
+              onClick={() => setModalImage(img.src)}
+            />
+          ))}
         </div>
       </div>
 
-      <div className="project-section">
-        <h2 className="project-section-title">Flow Chart, ERD</h2>
-        <div className="project-content-grid">
-          <img
-            src="/images/codebrew/flow1.png"
-            alt="시스템 플로우"
-            className="project-image"
-          />
-          <img
-            src="/images/codebrew/erd1.png"
-            alt="ERD"
-            className="project-image"
-          />
-        </div>
-      </div>
-
-      <div className="project-section">
-        <h2 className="project-section-title">개발 과정 및 최종 결과물</h2>
-        <div className="project-content-grid">
-          <img
-            src="/images/codebrew/dev1.png"
-            alt="시스템 아키텍처"
-            className="project-image"
-          />
-          <img
-            src="/images/codebrew/dev2.png"
-            alt="메인 페이지"
-            className="project-image"
-          />
-          <img
-            src="/images/codebrew/dev3.png"
-            alt="사용자 트리플 구매"
-            className="project-image"
-          />
-          <img
-            src="/images/codebrew/dev4.png"
-            alt="관리자 페이지"
-            className="project-image"
-          />
-        </div>
-      </div>
+      {/* 공통 이미지 모달 */}
+      <ImageModal imageSrc={modalImage} onClose={() => setModalImage(null)} />
 
       <Link to="/" className="back-link">
         메인으로 돌아가기

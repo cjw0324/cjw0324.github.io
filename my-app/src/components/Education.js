@@ -27,22 +27,6 @@ function Education() {
         <h2 className="section-title">Education</h2>
         <div className="content-row">
           <div className="date-column">
-            2023.09-2023.12
-            <br />
-            <span className="small-text">(수료)</span>
-          </div>
-          <div className="content-column">
-            <div className="education-item">
-              <h3>TABA 4기 : 대학 · 기업 협력형 SW 아카데미</h3>
-              <p>
-                OS, DB(SQL, tibero), AI 교육 및 실무 중심 종합 설계 프로젝트
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div className="content-row">
-          <div className="date-column">
             2024.12-2025.06
             <br />
             <span className="small-text">(진행중)</span>
@@ -53,6 +37,22 @@ function Education() {
               <p>
                 Java, Kotlin, Spring Framework 기반의 Web Back-End 교육 및
                 프로젝트
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div className="content-row">
+          <div className="date-column">
+            2023.09-2023.12
+            <br />
+            <span className="small-text">(수료)</span>
+          </div>
+          <div className="content-column">
+            <div className="education-item">
+              <h3>TABA 4기 : 대학 · 기업 협력형 SW 아카데미</h3>
+              <p>
+                OS, DB(SQL, tibero), AI 교육 및 실무 중심 종합 설계 프로젝트
               </p>
             </div>
           </div>

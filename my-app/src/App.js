@@ -9,6 +9,7 @@ import CampShare from "./pages/CampShare";
 import FindME from "./pages/FindME";
 import CodeBrew from "./pages/CodeBrew";
 import DevPrep from "./pages/DevPrep";
+import TicketON from "./pages/TicketON";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/findme" element={<FindME />} />
           <Route path="/codebrew" element={<CodeBrew />} />
           <Route path="/devprep" element={<DevPrep />} />
+          <Route path="/ticketon" element={<TicketON />} />
         </Routes>
       </div>
     </Router>

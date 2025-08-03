@@ -1,7 +1,25 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import ImageModal from "../components/common/ImageModal";
 
 function CampShare() {
+  const [modalImage, setModalImage] = useState(null);
+
+  const images = [
+    {
+      src: "/images/campshare/architecture.png",
+      alt: "시스템 아키텍처",
+    },
+    {
+      src: "/images/campshare/1.png",
+      alt: "하이브리드 추천 시스템",
+    },
+    {
+      src: "/images/campshare/2.png",
+      alt: "상품 상세 페이지 서비스 화면",
+    },
+  ];
+
   return (
     <div className="project-page">
       <div className="project-header">
@@ -64,10 +82,6 @@ function CampShare() {
         <ul>
           <li>Java</li>
           <li>Spring, JPA</li>
-          <li>AWS (EC2, RDS, S3), Docker, Nginx</li>
-          <li>MySQL</li>
-          <li>OAuth 2.0, JWT, Swagger</li>
-          <li>Python, Flask</li>
         </ul>
       </div>
 
@@ -86,32 +100,30 @@ function CampShare() {
               당담함과 위축감을 느꼈고, 무지로 인해 팀에 피해를 끼치고 싶지
               않다는 생각이 걱정됐습니다.
             </p>
-
             <p>
               그래서 수업 외 시간과 주말을 활용해 매일 학습했고, 적게라도 기능을
               맡아 구현해보며 체득해 나갔습니다.
             </p>
-            <br />
             <p>
               결과적으로 프로젝트 후반에는 컨트롤러-서비스-레포지토리 구조의
               흐름, DTO와 Entity 분리, 의존성 주입 방식을 이해하게 되었고, 이
-              경험은 이후의 프로젝트들에서 기술적 의사결정에 많이 도움이 수 있는
-              발판이 되었습니다.
+              경험은 이후의 프로젝트들에서 기술적 의사결정에 도움이 되는 발판이
+              되었습니다.
             </p>
-            <br />
           </li>
+
           <li>
             <h3>API 응답 과정에서 순환 참조 문제가 발생</h3>
             <p>
               Entity를 그대로 JSON 응답에 활용하며 순환 참조 문제가
-              발생했습니다. 이를 해결하기 위해 응답 객체를 DTO로 분리하였습니다.{" "}
+              발생했습니다. 이를 해결하기 위해 응답 객체를 DTO로 분리하였습니다.
             </p>
             <p>
               이 경험을 통해 저는 무작정 구현하는 것이 아니라 데이터 흐름과 객체
-              관계를 구조적으로 이해하는 데 도의 중요성을 배웠습니다.
+              관계를 구조적으로 이해하는 것의 중요성을 배웠습니다.
             </p>
-            <br />
           </li>
+
           <li>
             <h3>협업을 위한 Github 에서 코드 충돌 및 PR 실수</h3>
             <p>
@@ -124,7 +136,6 @@ function CampShare() {
               실수 이후 다양한 명령어를 실습하며 Git의 동작 원리를 몸으로 익히게
               되었습니다.
             </p>
-            <br />
             <p>
               이 경험을 통해 협업에서는 기술만큼이나 커뮤니케이션과 도구 활용
               능력의 중요성을 느꼈고, 이후 프로젝트에서는 PR 템플릿 활용, 이슈
@@ -140,11 +151,11 @@ function CampShare() {
         <p>
           Campshare 프로젝트는 제가 무지에서 출발해{" "}
           <strong>소통 부족함을 자각</strong>하고, 혼자일 때보다 함께일 때 더
-          많이 배울 수 있다는 것을 깨닫게 해준 소중한 첫 경험입니다.{" "}
+          많이 배울 수 있다는 것을 깨닫게 해준 소중한 첫 경험입니다.
         </p>
         <p>
           기술적 부족함을 겪었지만, 그 과정에서{" "}
-          <strong>기존가의 중요성과 협업에서의 책임감</strong>, 그리고 학습을{" "}
+          <strong>기초의 중요성과 협업에서의 책임감</strong>, 그리고 학습을{" "}
           <strong>지속할 수 있는 태도</strong>를 얻었습니다.
         </p>
         <p>
@@ -154,62 +165,23 @@ function CampShare() {
       </div>
 
       <div className="project-section">
-        <h2 className="project-section-title">서비스 기획</h2>
+        <h2 className="project-section-title">최종 결과물</h2>
         <div className="project-content-grid">
-          <img
-            src="/images/campshare/service1.png"
-            alt="캠핑 용품의 가격 부담과 낮은 활용도"
-            className="project-image"
-          />
-          <img
-            src="/images/campshare/service2.png"
-            alt="차별화/주요 서비스"
-            className="project-image"
-          />
+          {images.map((img, idx) => (
+            <img
+              key={idx}
+              src={img.src}
+              alt={img.alt}
+              className="project-image"
+              style={{ cursor: "pointer" }}
+              onClick={() => setModalImage(img.src)}
+            />
+          ))}
         </div>
       </div>
 
-      <div className="project-section">
-        <h2 className="project-section-title">Flow Chart</h2>
-        <div className="project-content-grid">
-          <img
-            src="/images/campshare/flow1.png"
-            alt="Flow Chart 1"
-            className="project-image"
-          />
-          <img
-            src="/images/campshare/flow2.png"
-            alt="Flow Chart 2"
-            className="project-image"
-          />
-        </div>
-      </div>
-
-      <div className="project-section">
-        <h2 className="project-section-title">개발 과정 및 최종 결과물</h2>
-        <div className="project-content-grid">
-          <img
-            src="/images/campshare/development1.png"
-            alt="시스템 아키텍처"
-            className="project-image"
-          />
-          <img
-            src="/images/campshare/development2.png"
-            alt="하이브리드 추천 시스템"
-            className="project-image"
-          />
-          <img
-            src="/images/campshare/development3.png"
-            alt="그룹핑 활용 검색 기능"
-            className="project-image"
-          />
-          <img
-            src="/images/campshare/development4.png"
-            alt="상품 상세 페이지 서비스 화면"
-            className="project-image"
-          />
-        </div>
-      </div>
+      {/* 공통 이미지 모달 */}
+      <ImageModal imageSrc={modalImage} onClose={() => setModalImage(null)} />
 
       <Link to="/" className="back-link">
         메인으로 돌아가기

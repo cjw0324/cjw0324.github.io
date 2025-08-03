@@ -33,18 +33,58 @@ function ProjectActivity() {
       </div>
 
       <div className="content-row">
-        <div className="date-column">2023.09-2023.12</div>
+        <div className="date-column">2025.04-2025.06</div>
         <div className="content-column">
           <div className="project-item">
             <h3>
               <Link
-                to="/campshare"
+                to="/ticketon"
                 style={{
                   textDecoration: "none",
                   borderBottom: "1px dashed #3a8194",
                 }}
               >
-                CampShare : 캠핑 용품 공유 플랫폼
+                TicketON : 티켓팅 플랫폼 서비스
+              </Link>
+            </h3>
+            <p>Role : PO, Back-End Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-row">
+        <div className="date-column">2025.02-2025.03</div>
+        <div className="content-column">
+          <div className="project-item">
+            <h3>
+              <Link
+                to="/devprep"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "1px dashed #3a8194",
+                }}
+              >
+                Dev Prep : 개발자를 위한 CS 지식 학습 플랫폼
+              </Link>
+            </h3>
+            <p>Role : Back-End Developer</p>
+          </div>
+        </div>
+      </div>
+
+      <div className="content-row">
+        <div className="date-column">2025.02-2025.02</div>
+        <div className="content-column">
+          <div className="project-item">
+            <h3>
+              <Link
+                to="/codebrew"
+                style={{
+                  textDecoration: "none",
+                  borderBottom: "1px dashed #3a8194",
+                }}
+              >
+                CODE-Brew : 카페 메뉴 온라인 주문 · 배송 서비스
               </Link>
             </h3>
             <p>Role : Back-End Developer</p>
@@ -73,38 +113,18 @@ function ProjectActivity() {
       </div>
 
       <div className="content-row">
-        <div className="date-column">2025.02-2025.02</div>
+        <div className="date-column">2023.09-2023.12</div>
         <div className="content-column">
           <div className="project-item">
             <h3>
               <Link
-                to="/codebrew"
+                to="/campshare"
                 style={{
                   textDecoration: "none",
                   borderBottom: "1px dashed #3a8194",
                 }}
               >
-                CODE-Brew : 카페 메뉴 온라인 주문 · 배송 서비스
-              </Link>
-            </h3>
-            <p>Role : Back-End Developer</p>
-          </div>
-        </div>
-      </div>
-
-      <div className="content-row">
-        <div className="date-column">2025.02-2025.03</div>
-        <div className="content-column">
-          <div className="project-item">
-            <h3>
-              <Link
-                to="/devprep"
-                style={{
-                  textDecoration: "none",
-                  borderBottom: "1px dashed #3a8194",
-                }}
-              >
-                Dev Prep : 개발자를 위한 CS 지식 학습 플랫폼
+                CampShare : 캠핑 용품 공유 플랫폼
               </Link>
             </h3>
             <p>Role : Back-End Developer</p>
