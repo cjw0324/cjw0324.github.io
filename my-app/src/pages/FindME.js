@@ -91,7 +91,6 @@ function FindME() {
           <li>Spring, JPA</li>
           <li>MySQL</li>
           <li>JWT, Swagger</li>
-          <li>Python, YoloV5, Flask</li>
         </ul>
       </div>
 

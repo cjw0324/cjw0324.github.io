@@ -98,9 +98,7 @@ function CodeBrew() {
         <ul>
           <li>Java</li>
           <li>Spring, JPA</li>
-          <li>OAuth 2.0, JWT, Swagger</li>
-          <li>MySQL, Redis - Lock</li>
-          <li>AWS (EC2)</li>
+          <li>MySQL, Redis</li>
         </ul>
       </div>
 
